@@ -1,3 +1,4 @@
+import { CartWidget } from '../CartWidget/CartWidget';
 import './NavBar.css';
 import logo from './NavBar.img/logo.png'
 
@@ -22,6 +23,8 @@ export default function  NavBar() {
 
             </nav>
 
+            <CartWidget/>
+            
         </div>
 
 
