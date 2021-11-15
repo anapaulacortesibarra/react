@@ -12,7 +12,7 @@ function App() {
 
       <NavBar/>
 
-      <ItemListContainer greetings="¡Bienvenido a Bonhomia Joyas!"/>
+      <ItemListContainer/>
 
     </div>
   );

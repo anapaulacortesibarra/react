@@ -1,0 +1,19 @@
+.counter{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+
+.counterNumber{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.AddtoCart{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
