@@ -1,0 +1,47 @@
+.card-product-container{
+    display: inline-grid;
+    grid-template-columns:  1fr, 1fr, 1fr;
+    width: 20%;
+}
+
+.card-img{
+    align-items: center;
+ 
+
+}
+
+.card-product{
+    display: inline-grid;
+    grid-template-columns:  1fr, 1fr, 1fr;
+    grid-template-rows: 2;
+    margin: 0px, 0px, 0px;
+    text-align: center;
+    align-items: center;
+    border: 5px solid color #95887e;
+    border-radius: 20px;
+    color:#95887e;
+    overflow: hidden;
+
+}
+
+.card-name{
+    color: #95887e
+
+}
+
+.card-category{
+    visibility: hidden;
+    font-size: 0px;
+}
+
+.card-buttons{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    
+}
+
+.handle{
+    width: 30%;
+}

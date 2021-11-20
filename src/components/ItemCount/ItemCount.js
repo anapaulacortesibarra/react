@@ -38,13 +38,13 @@ export const ItemCount = ({stock}) =>{
         <div>
            
            <div className="counter">
-                <Button variant="secondary" onClick={decrementar}> - </Button>    
+                <Button variant="secondary" size="sm" onClick={decrementar}> - </Button>    
                 <h2 className="counterNumber">{counter}</h2>             
-                <Button variant="secondary" onClick={incrementar}> + </Button>
+                <Button variant="secondary" size="sm" onClick={incrementar}> + </Button>
             </div>
 
             <div>
-                 <Button className="AddtoCart" variant="secondary" size="lg" onClick={result}>Agregar al Carrito</Button>
+                 <Button className="AddtoCart" variant="secondary" size="sm" onClick={result}>Agregar al Carrito</Button>
             </div>
         </div>
 
