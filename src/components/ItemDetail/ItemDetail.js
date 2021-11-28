@@ -5,14 +5,16 @@ import { ItemCount } from '../ItemCount/ItemCount'
 import {Button} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import './ItemDetail.css'
+import { CartContext } from '../context/CartContext';
+import { useContext } from 'react';
 
 
 export default function ItemDetail({ id, name, img, price, category}) {
 
+    const {addtoCart, isInCart} = useContext(CartContext)
 
     const navigate = useNavigate() //controla el historial de navegación //
     const [amount, setAmount] = useState(0);
-    const [agregado, setAgregado] = useState(false);
 
 
     const handleVolver = () => {
@@ -25,14 +27,14 @@ export default function ItemDetail({ id, name, img, price, category}) {
 
     const handleAgregar = () =>{
         if (amount> 0) {
-            console.log('Item agregado:',{
-            id,
-            name,
-            price,
-            img,
-            amount
-         })
-            setAgregado(true)
+            addtoCart({
+                id,
+                name,
+                img,
+                price,
+                amount
+
+            })
         }
     }
 
@@ -49,7 +51,7 @@ export default function ItemDetail({ id, name, img, price, category}) {
 
 
                     {
-                        !agregado
+                        !isInCart(id)
                         ?  <ItemCount 
                                 stock="10" 
                                 amount={amount} 

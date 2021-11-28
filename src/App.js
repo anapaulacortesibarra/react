@@ -5,31 +5,29 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartView } from './components/CartView/CartView';
+import {CartContext, CartProvider} from './components/context/CartContext';
 
 
 
 
 function App() {
+
+
   return (
   
+    <CartProvider>
+      <BrowserRouter>
+        <NavBar/>
+          <Routes>
 
-    <BrowserRouter>
-
-      <NavBar/>
-
-        <Routes>
-
-  
-          <Route path="/" element={<ItemListContainer/>}/>
-          <Route path="/productos/:catId" element={<ItemListContainer/>}/>
-          <Route path="/detail/:itemId" element={<ItemDetailContainer/>}/>
-          <Route path="/cart" element={<CartView/>}/>
-          
-
-        </Routes>
-
-    </BrowserRouter>
-
+            <Route path="/" element={<ItemListContainer/>}/>
+            <Route path="/productos/:catId" element={<ItemListContainer/>}/>
+            <Route path="/detail/:itemId" element={<ItemDetailContainer/>}/>
+            <Route path="/cart" element={<CartView/>}/>
+            
+          </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

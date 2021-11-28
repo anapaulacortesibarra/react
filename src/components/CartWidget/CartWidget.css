@@ -1,3 +1,8 @@
 .Cart{
     font-size: 40px;
 }
+
+.totalAmount{
+    color:  #d4bcb2;
+    font-size: 18px;
+}
