@@ -9,7 +9,7 @@ import { CartContext } from '../context/CartContext';
 import { useContext } from 'react';
 
 
-export default function ItemDetail({ id, name, img, price, category}) {
+export default function ItemDetail({ id, name, img, desc, price, category}) {
 
     const {addtoCart, isInCart} = useContext(CartContext)
 
@@ -59,7 +59,7 @@ export default function ItemDetail({ id, name, img, price, category}) {
                                 onAdd={handleAgregar}
                             />
 
-                        : <Link to="/cart" className="btn btn success ">Terminar compra</Link>
+                        : <Link to="/cart"  className="btn btn-success ">Terminar compra</Link>
 
                     }
 

@@ -1,6 +1,5 @@
-h1 {
+h2 {
     color:  #d4bcb2;
-    text-align: center;
 }
 
 
@@ -20,3 +19,20 @@ h1 {
 }
 
 
+.btn-volver{
+    color:  #ffffff;
+    font-weight: 700;
+    background-color:#d4bcb2;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px; 
+
+}
+
+.btn-volver:visited{
+    color:  #ffffff;
+}
+
+.btn-volver:hover{
+    color:  #ffffff;
+
+}

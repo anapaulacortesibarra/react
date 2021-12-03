@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { pedirDatos } from '../../helpers/pedirDatos'
 import { useParams } from 'react-router'
 import { ItemList } from '../ItemList/ItemList'
+import { Loader } from '../Loader/Loader'
 
 export const ItemListContainer = () => {
 
@@ -36,8 +37,8 @@ export const ItemListContainer = () => {
         <>
             {
                 loading 
-                    ? <h2>Cargando...</h2> 
-                    : <ItemList items={productos}/>
+                ? <Loader/>
+                : <ItemList items={productos}/>
             }
         </>
     )
