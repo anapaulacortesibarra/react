@@ -7,7 +7,7 @@ import './CartView.css'
 export const CartView = () => {
 
 
-    const { cart, deleteCart } = useContext(CartContext)
+    const { cart, deleteCart, totalCart  } = useContext(CartContext)
 
 
     if (cart.length === 0) {
@@ -29,6 +29,7 @@ export const CartView = () => {
             </section>
             <hr />
             <div>
+                <p>Total compra: ${totalCart()}</p>
                 <button className="btn btn-danger" onClick={deleteCart}>Vaciar carrito</button>
                 <button className="btn btn-success mx-2">Terminar mi compra</button>
             </div>

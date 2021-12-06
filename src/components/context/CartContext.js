@@ -32,7 +32,7 @@ export const CartProvider = ({children}) =>{
   }
 
   const totalCart = () =>{
-    return cart.reduce((acc, {amount,price}) => acc + amount * price,0)
+    return cart.reduce((acc, prod) => acc + prod.amount * prod.price,0)
   }
 
   const values = {
