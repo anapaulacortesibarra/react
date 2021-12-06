@@ -16,7 +16,6 @@ export default function  NavBar() {
 
             <nav>
                 <ul>
-                    <li><Link to="/" className="nav-link">Inicio</Link></li>
                     <li><Link to="productos/collares" className="nav-link">Collares</Link></li>
                     <li><Link to="productos/aros" className="nav-link">Aros</Link></li>
 

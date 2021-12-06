@@ -45,7 +45,7 @@ export default function ItemDetail({ id, name, img, desc, price, category}) {
                 <div className="card-product">
                     <img className="card-img" src={img} alt={name} />
                     <h3 className="card-name">{name}</h3>
-                    <p className="card-description">lorem ipsum </p>
+                    <p className="card-description">{desc} </p>
                     <p className="card-price">Precio: ${price}</p>
                     <p className="card-category">{category}</p>
 

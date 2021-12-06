@@ -3,7 +3,7 @@ import './Item.css'
 
 
 
-export const Item = ({id, img, name, desc, price,category }) => {
+export const Item = ({id, img, name, price,category }) => {
 
     return (
         <div className="card-product-container" key={id}>

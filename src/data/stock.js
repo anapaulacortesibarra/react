@@ -16,6 +16,7 @@ export const stock = [
         "price": 600,
         "stock": "10",
         "img": `${collar1}`,
+        "desc": "Collar con dije “Cruz”, plata 925",
         "category": "collares"
     },
     {
@@ -24,6 +25,7 @@ export const stock = [
         "price": 800,
         "stock": "10",
         "img": `${collar2}`,
+        "desc": "Collar con dije “white”, plata 925",
         "category": "collares"
 
     },
@@ -33,6 +35,7 @@ export const stock = [
         "price": 700,
         "stock": "10",
         "img": `${collar3}`,
+        "desc":"Collar con dije “Blue”, plata 925",
         "category": "collares"
 
     },
@@ -42,6 +45,7 @@ export const stock = [
         "price": 500,
         "stock": "10",
         "img": `${aro1}`,
+        "desc": "Aros argolla de acero blanco",
         "category": "aros"
 
     },
@@ -51,6 +55,7 @@ export const stock = [
         "price": 900,
         "stock": "10",
         "img": `${aro2}`,
+        "desc": "Aros de acero blanco",
         "category": "aros"
 
     }
