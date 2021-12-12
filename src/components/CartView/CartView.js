@@ -31,7 +31,7 @@ export const CartView = () => {
             <div>
                 <p>Total compra: ${totalCart()}</p>
                 <button className="btn btn-danger" onClick={deleteCart}>Vaciar carrito</button>
-                <button className="btn btn-success mx-2">Terminar mi compra</button>
+                <Link to="/checkout" className="btn btn-success mx-2">Terminar mi compra</Link>
             </div>
         </div>
     )
