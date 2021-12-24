@@ -5,17 +5,17 @@
     display: flex;
     padding-left: 10px;
     margin-left: 10px;
-    width: 70%;
 }
 
 .form-title{
     padding-left: 10px;
+    padding-top: 10px;
 
 }
 
-.form-control{
+/* .form-control{
     width: 260%;
-}
+} */
 
 .btn{
     margin-top: 10px;

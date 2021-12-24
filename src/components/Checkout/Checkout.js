@@ -43,10 +43,10 @@ export function Checkout() {
             {cart.length === 0 
                 ? <Navigate to="/"/>
                 :
-                    <div>
+                    <div className="container md-2">
                         <h2 className='form-title'>Resumen de compra</h2>
                         <hr/>
-                        <div className="form">
+                        <div className="container md-2">
                             <Formik 
                                 initialValues={initialValues} 
                                 validationSchema={schema} 
