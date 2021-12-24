@@ -17,7 +17,7 @@
 }
 
 .card-name{
-    margin-left: 28px;
+    margin-left: 40px;
 }
 
 .elements{
@@ -27,15 +27,34 @@
     margin-left: 50px;
 } 
 
-.btn{
-    margin-left: 20px;
-}
 
 .card-buttons{
     display: inline;
     align-items: center;
     margin-left: 40px;
+    margin-right: 20px;
+    padding-top: 20px;
     
+}
+
+.lastStep{
+    color:  #ffff;
+    background-color: #95887e;
+    font-weight: bold;
+    margin:20px;
+    border: 1px solid #95887e;
+
+
+}
+
+.lastStep:visited{
+    color:   #95887e;
+
+}
+
+.lastStep:hover{
+    color:  #95887e;
+
 }
 
 .handle{

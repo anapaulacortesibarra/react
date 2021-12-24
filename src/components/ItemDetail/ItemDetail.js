@@ -59,7 +59,9 @@ export default function ItemDetail({ id, name, img, desc, price, category}) {
                                 onAdd={handleAgregar}
                             />
 
-                        : <Link to="/cart"  className="btn btn-success ">Terminar compra</Link>
+                        : <div className='lastStep'>
+                            <Link to="/cart"  className="nav-link ">Terminar compra</Link>
+                        </div>
 
                     }
 
