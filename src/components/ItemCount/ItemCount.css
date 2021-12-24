@@ -2,6 +2,7 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
+    margin-left: 61px;
     
 
 
@@ -15,7 +16,7 @@
 
 .AddtoCart{
     margin:auto;
-    margin-top: 15px;
+    margin-top: 10px;
     display: flex;
     
 }

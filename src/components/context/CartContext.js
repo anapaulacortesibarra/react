@@ -56,4 +56,3 @@ export const CartProvider = ({children}) =>{
 }
 
 
-//children son todos los componentes que se encuentran en el app dentro del CartProvider//

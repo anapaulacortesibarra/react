@@ -1,0 +1,23 @@
+
+.form{
+    align-items: left;
+    background-color: #F2ECEC;
+    display: flex;
+    padding-left: 10px;
+    margin-left: 10px;
+    width: 70%;
+}
+
+.form-title{
+    padding-left: 10px;
+
+}
+
+.form-control{
+    width: 260%;
+}
+
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

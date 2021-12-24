@@ -5,13 +5,13 @@ import './ItemList.css';
 export const ItemList = ({items}) => {
 
     return (
-        <Container className="my-5">
+        <div className='ItemList'>
             <h2 className="productTitle">Productos</h2>
             <hr/>
             <Row>
                 {/* {items.map((prod) => <Item prod={prod}/>)} */}
                 {items.map((prod) => <Item key={prod.id} {...prod}/>)}
             </Row>
-        </Container>
+        </div>
     )
 }

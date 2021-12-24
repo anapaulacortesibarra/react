@@ -40,14 +40,14 @@ export default function ItemDetail({ id, name, img, desc, price, category}) {
 
 
     return (
-        <article>
-            <div className="card-product-container" key={id}>
+        <article className="card">
+            <div className="cards" key={id}>
                 <div className="card-product">
                     <img className="card-img" src={img} alt={name} />
-                    <h3 className="card-name">{name}</h3>
-                    <p className="card-description">{desc} </p>
-                    <p className="card-price">Precio: ${price}</p>
-                    <p className="card-category">{category}</p>
+                     <h3 className="card-name">{name}</h3>
+                        <div className="elements">
+                            <p>{desc} - <span>${price}</span></p>
+                        </div>
 
 
                     {

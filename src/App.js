@@ -10,26 +10,25 @@ import { Checkout } from './components/Checkout/Checkout';
 
 
 
-
 function App() {
 
 
   return (
   
     <CartProvider>
-      <BrowserRouter>
-        <NavBar/>
-          <Routes>
+                <BrowserRouter>
+                <NavBar/>
+                    <Routes>
 
-            <Route path="/" element={<ItemListContainer/>}/>
-            <Route path="/productos/:catId" element={<ItemListContainer/>}/>
-            <Route path="/detail/:itemId" element={<ItemDetailContainer/>}/>
-            <Route path="/cart" element={<CartView/>}/>
-            <Route path="/checkout" element={<Checkout/>}/>
+                      <Route path="/" element={<ItemListContainer/>}/>
+                      <Route path="/productos/:catId" element={<ItemListContainer/>}/>
+                      <Route path="/detail/:itemId" element={<ItemDetailContainer/>}/>
+                      <Route path="/cart" element={<CartView/>}/>
+                      <Route path="/checkout" element={<Checkout/>}/>
 
-            
-          </Routes>
-      </BrowserRouter>
+                      
+                    </Routes>
+                </BrowserRouter>
     </CartProvider>
   );
 }

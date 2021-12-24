@@ -43,58 +43,58 @@ export function Checkout() {
             {cart.length === 0 
                 ? <Navigate to="/"/>
                 :
-                    <div className="container my-5">
-                        <h2>Resumen de compra</h2>
+                    <div>
+                        <h2 className='form-title'>Resumen de compra</h2>
                         <hr/>
-
-                        <Formik 
-                            initialValues={initialValues} 
-                            validationSchema={schema} 
-                            onSubmit={ (values) => { 
-                                generarOrden(values, cart, totalCart, deleteCart)
-                            }}
-                        >
-                            {(formik) => ( 
-                                <form onSubmit={formik.handleSubmit}>
-                                    <input
-                                        onChange={formik.handleChange}
-                                        name="nombre"
-                                        value={formik.values.nombre}
-                                        className="form-control my-2"
-                                        type="text"
-                                        placeholder="nombre"
-                                    />
-                                    {formik.errors.nombre && <small>{formik.errors.nombre}</small>} 
-
-
-                                    <input
-                                        onChange={formik.handleChange}
-                                        name="apellido"
-                                        value={formik.values.apellido}
-                                        className="form-control my-2"
-                                        type="text"
-                                        placeholder="apellido"
-                                    />
-                                    {formik.errors.apellido && <small>{formik.errors.apellido}</small>}
-
-                                    <input
-                                        onChange={formik.handleChange}
-                                        name="email"
-                                        value={formik.values.email}
-                                        className="form-control my-2"
-                                        type="email"
-                                        placeholder="email"
-                                    />
-                                    {formik.errors.email && <small>{formik.errors.email}</small>}
-
-                                    <button type="submit" className="btn btn-primary">Enviar</button>
-                                </form>
-                            )}
-                        </Formik>
+                        <div className="form">
+                            <Formik 
+                                initialValues={initialValues} 
+                                validationSchema={schema} 
+                                onSubmit={ (values) => { 
+                                    generarOrden(values, cart, totalCart, deleteCart)
+                                }}
+                            >
+                                {(formik) => ( 
+                                    <form onSubmit={formik.handleSubmit}>
+                                        <input
+                                            onChange={formik.handleChange}
+                                            name="nombre"
+                                            value={formik.values.nombre}
+                                            className="form-control my-4"
+                                            type="text"
+                                            placeholder="nombre"
+                                        />
+                                        {formik.errors.nombre && <small>{formik.errors.nombre}</small>} 
 
 
-                    </div>
+                                        <input
+                                            onChange={formik.handleChange}
+                                            name="apellido"
+                                            value={formik.values.apellido}
+                                            className="form-control my-4"
+                                            type="text"
+                                            placeholder="apellido"
+                                        />
+                                        {formik.errors.apellido && <small>{formik.errors.apellido}</small>}
 
+                                        <input
+                                            onChange={formik.handleChange}
+                                            name="email"
+                                            value={formik.values.email}
+                                            className="form-control my-2"
+                                            type="email"
+                                            placeholder="email"
+                                        />
+                                        {formik.errors.email && <small>{formik.errors.email}</small>}
+
+                                        <button type="submit" className="btn btn-primary">Enviar</button>
+                                    </form>
+                                )}
+                            </Formik>
+
+
+                        </div>
+                    </div>                   
 
             }
         </>

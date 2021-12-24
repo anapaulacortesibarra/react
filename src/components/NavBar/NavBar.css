@@ -1,44 +1,10 @@
 body{
-    background: #ffffff;;
+    background: #ffffff;
 }
-
-
-.header {
-    width: 100%;
-    background-color: #ffffff;
-    color:  #d4bcb2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-nav ul {
-    display: flex;
-    color:  #d4bcb2;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    margin: 0;
-
-}
-
-nav li {
-    font-weight: 700;
-    color:  #d4bcb2;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 16px;
-    list-style: none;
-    
-}
-
 
 .logo {
     margin: 3px 0px 10px 0px;
-    vertical-align: middle;
 }
-
 
 .nav-link{
     color:  #d4bcb2;
@@ -55,3 +21,4 @@ nav li {
 .nav-link:hover{
     color:  #d4bcb2;
 }
+

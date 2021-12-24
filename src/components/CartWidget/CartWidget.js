@@ -7,7 +7,7 @@ import './CartWidget.css';
 
 export const CartWidget = () =>{
 
-    const {totalAmountCart} = useContext(CartContext) //cada funcion que utilizo del context en mis componentes debo agregarlas//
+    const {totalAmountCart} = useContext(CartContext)
 
     return (
 

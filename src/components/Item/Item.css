@@ -1,5 +1,5 @@
 .nav-link{
-    color:  #95887e;
+    color:  #d4bcb2;
     font-weight: bold;
     text-align: center
 
@@ -8,20 +8,20 @@
 
 
 .nav-link:visited{
-    color:  #95887e
+    color: #d4bcb2;
    
 }
 
 
 .nav-link:hover{
-    color: #95887e
+    color: #d4bcb2;
 }
 
-.card-product-container{
-    display: inline-grid;
-    grid-template-columns:  1fr, 1fr, 1fr;
-    width: 20%;
+.b{
+    border: 2px solid #95887e;
+    margin-top: 10px;
 }
+
 
 .card-img{
     align-items: center;
@@ -29,27 +29,24 @@
 
 }
 
-.card-product{
-    display: inline-grid;
-    grid-template-columns:  1fr, 1fr, 1fr;
-    grid-template-rows: 2;
-    margin: 0px, 0px, 0px;
-    text-align: center;
-    align-items: center;
-    border: 5px solid color #95887e;
-    border-radius: 20px;
-    color:#95887e;
-    overflow: hidden;
-
-}
-
-
 .card-name{
-    color: #95887e
+    color: #95887e;
+    margin-top: 10px;
 
 }
 
-.card-category{
-    visibility: hidden;
-    font-size: 0px;
+.card{
+    width: 13rem;
+    align-items:center;
+    display: grid;
+    grid-template-columns:  1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1;
+    margin-left: 25px;
+    margin-bottom: 20px;
+
+
 }
+
+
+
+
