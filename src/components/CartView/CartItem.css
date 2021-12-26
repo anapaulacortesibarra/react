@@ -4,8 +4,13 @@
 
 }
 
+.card-name{
+    color: #95887e;
+
+}
+
 .productImg{
     align-items: center;
-    width: 20vh;
+    width: 50%;
  
 }

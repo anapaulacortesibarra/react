@@ -60,7 +60,7 @@ export default function ItemDetail({ id, name, img, desc, price, category}) {
                             />
 
                         : <div className='lastStep'>
-                            <Link to="/cart"  className="nav-link ">Terminar compra</Link>
+                            <Button variant="dark" as={Link} to={`/cart`}>Finalizar compra</Button>
                         </div>
 
                     }

@@ -5,19 +5,31 @@
     display: flex;
     padding-left: 10px;
     margin-left: 10px;
+    width:50%;
+}
+
+.form-control{
+    width: 50%;
+    background-color: #F2ECEC;
 }
 
 .form-title{
     padding-left: 10px;
     padding-top: 10px;
+    width: 50%;
 
 }
-
-/* .form-control{
-    width: 260%;
-} */
 
 .btn{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.sent{
+    color:  #ffff;
+    background-color: #95887e;
+    font-weight: bold;
+    border: 1px solid #95887e;
+    margin-top: 10px;
+    margin-bottom: 18%;
 }

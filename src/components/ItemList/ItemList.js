@@ -1,4 +1,4 @@
-import { Container, Row } from 'react-bootstrap'
+import { Row } from 'react-bootstrap'
 import { Item } from '../Item/Item'
 import './ItemList.css';
 

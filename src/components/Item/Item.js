@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './Item.css'
+import { Button } from "react-bootstrap";
 
 
 
@@ -12,7 +13,7 @@ return (
                     <img className="card-img" src={img} alt={name} />
                         <h4 className="card-name">{name}</h4>
                         <div className="b">
-                            <Link to={`/detail/${id}`} className="nav-link" >Descripción del producto</Link>
+                           <Button variant="dark" as={Link} to={`/detail/${id}`}> Descripción del producto</Button>
                         </div>
             </div>
         </section>

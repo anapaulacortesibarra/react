@@ -8,19 +8,12 @@ export const ItemCount = ({stock,  setAmount, amount, onAdd}) =>{
 
 
     const handleRestar = () =>{
-        if(amount>1){
-            setAmount(amount-1);
-        }else{
-            alert("No se puede realizar esta operación")
+        if(amount>0){ setAmount(amount-1);
         }
-
     }
 
     const handleSumar = () =>{
-        if(stock>amount){
-            setAmount(amount+1);
-        }else{
-            alert("Por el momento no tenemos más stock de este producto")
+        if(stock>amount){ setAmount(amount+1);
         }
     }
 
@@ -30,13 +23,13 @@ export const ItemCount = ({stock,  setAmount, amount, onAdd}) =>{
         <div>
            
            <div className="counter">
-                <Button variant="secondary" size="sm" onClick={handleRestar}> - </Button>    
+                <Button disabled={amount===0} variant="secondary" size="sm" onClick={handleRestar}> - </Button>    
                 <h2 className="counterNumber">{amount}</h2>             
-                <Button variant="secondary" size="sm" onClick={handleSumar}> + </Button>
+                <Button disabled={amount === stock} variant="secondary" size="sm" onClick={handleSumar}> + </Button>
             </div>
 
             <div>
-                 <Button className="AddtoCart" variant="secondary" size="sm" onClick={onAdd}>Agregar al Carrito</Button>
+                 <Button className="AddtoCart" variant="dark" size="sm" onClick={onAdd}>Agregar al Carrito</Button>
             </div>
         </div>
 

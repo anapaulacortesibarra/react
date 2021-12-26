@@ -43,10 +43,10 @@ export function Checkout() {
             {cart.length === 0 
                 ? <Navigate to="/"/>
                 :
-                    <div className="container md-2">
+                    <div className=" container">
                         <h2 className='form-title'>Resumen de compra</h2>
                         <hr/>
-                        <div className="container md-2">
+                        <div className="container">
                             <Formik 
                                 initialValues={initialValues} 
                                 validationSchema={schema} 
@@ -87,7 +87,7 @@ export function Checkout() {
                                         />
                                         {formik.errors.email && <small>{formik.errors.email}</small>}
 
-                                        <button type="submit" className="btn btn-primary">Enviar</button>
+                                        <button type="submit" className="sent">Enviar</button>
                                     </form>
                                 )}
                             </Formik>

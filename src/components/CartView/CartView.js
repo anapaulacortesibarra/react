@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
 import { CartItem} from './CartItem'
+import { Button } from 'react-bootstrap'
 import './CartView.css'
 
 export const CartView = () => {
@@ -15,7 +16,9 @@ export const CartView = () => {
             <div className="container my-5">
                 <h2> El carrito está vacío</h2>
                 <hr />
-                <Link to="/" className="btn-volver">Volver</Link>
+                <div className='back'>
+                    <Button variant="secondary" as={Link} to="/">Volver</Button>
+                </div>
             </div>
         )
     }
@@ -30,8 +33,8 @@ export const CartView = () => {
             <hr />
             <div>
                 <p>Total compra: ${totalCart()}</p>
-                <button className="btn btn-danger" onClick={deleteCart}>Vaciar carrito</button>
-                <Link to="/checkout" className="btn btn-success mx-2">Terminar mi compra</Link>
+                <Button variant="secondary" onClick={deleteCart}>Vaciar carrito</Button>
+                <Button variant="dark" as={Link} to="/checkout">Terminar compra </Button>
             </div>
         </div>
     )

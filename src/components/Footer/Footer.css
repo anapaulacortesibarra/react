@@ -1,0 +1,31 @@
+.Footer__socials{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0de;
+    color: #d4bcb2;
+ 
+}
+
+
+.footer{
+    text-align: center;
+	padding: 50px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav-link{
+    display: inline;
+}
+
+
+.nav-link:visited{
+    color:  #d4bcb2;
+   
+}
+
+
+.nav-link:hover{
+    color:  #d4bcb2;
+}

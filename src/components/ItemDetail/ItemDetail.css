@@ -33,30 +33,13 @@
     align-items: center;
     margin-left: 40px;
     margin-right: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     
 }
 
 .lastStep{
-    color:  #ffff;
-    background-color: #95887e;
-    font-weight: bold;
-    margin:20px;
-    border: 1px solid #95887e;
-
-
+    margin-left: 14%;
 }
-
-.lastStep:visited{
-    color:   #95887e;
-
-}
-
-.lastStep:hover{
-    color:  #95887e;
-
-}
-
 .handle{
     width: 30%;
 }
