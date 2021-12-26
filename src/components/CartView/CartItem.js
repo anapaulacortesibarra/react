@@ -14,10 +14,11 @@ export const CartItem = ({name, img, price, amount, id}) => {
             <div className="cards">
             <img className="card-img" src={img} alt={name} />
             <h3 className="card-name">{name}</h3>
-            <p>Precio: ${price}</p>
-            <p>Cantidad: {amount}</p>
+            <div className="card-data">
+                <p>Cantidad: {amount} - <span>${price}</span></p>
+            </div>
             
-            <Button variant="dark" onClick={() => { deleteItem(id) }}>
+            <Button className="delete" variant="dark" onClick={() => { deleteItem(id) }}>
             <MdDeleteOutline/>
             </Button>
 

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
+import { Button } from 'react-bootstrap'
 import { Navigate } from 'react-router'
 import { Formik } from 'formik' 
 import { generarOrden } from '../firebase/GenerarOrden'
@@ -87,7 +88,7 @@ export function Checkout() {
                                         />
                                         {formik.errors.email && <small>{formik.errors.email}</small>}
 
-                                        <button type="submit" className="sent">Enviar</button>
+                                        <Button variant="dark" type="submit" className="sent">Enviar</Button>
                                     </form>
                                 )}
                             </Formik>

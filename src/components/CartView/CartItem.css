@@ -6,11 +6,20 @@
 
 .card-name{
     color: #95887e;
-
+    align-items: center;
 }
 
 .productImg{
     align-items: center;
     width: 50%;
  
+}
+
+.card-data{
+    margin-left: 15%;
+}
+
+.delete{
+    margin-left: 40%;
+    width: 20%;
 }

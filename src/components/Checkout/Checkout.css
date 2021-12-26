@@ -26,10 +26,8 @@
 }
 
 .sent{
-    color:  #ffff;
-    background-color: #95887e;
+
     font-weight: bold;
-    border: 1px solid #95887e;
     margin-top: 10px;
     margin-bottom: 18%;
 }
